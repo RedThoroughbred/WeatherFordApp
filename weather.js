@@ -24,13 +24,14 @@ function displayWeather(data) {
 
     const cityName = data.name;
     const description = data.weather[0].description;
-    const temperature = data.main.temp;
+    const temperatureCelsius = data.main.temp;
+    const temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
     const humidity = data.main.humidity;
 
     const weatherData = `
         <p>City: ${cityName}</p>
         <p>Description: ${description}</p>
-        <p>Temperature: ${temperature} &#8451;</p>
+        <p>Temperature: ${temperatureFahrenheit} &#8457;</p>
         <p>Humidity: ${humidity}%</p>
     `;
 
