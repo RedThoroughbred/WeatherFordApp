@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    background-color: #f0f0f0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your desired font */
+}
+
+h1 {
+    color: #007bff; /* Blue color */
+}
+
+button {
+    background-color: #4caf50; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button {
+    /* ... */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Dark green color when hovering */
+}
+
+body {
+    background-image: linear-gradient(to right, #ffafbd, #ffc3a0); /* Gradient animation */
+}
+
+.weather-info-container {
+    opacity: 0; /* Initially hide the container */
+    transition: opacity 0.5s ease; /* Apply a transition for a smooth fade-in effect */
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info-container.show {
+    opacity: 1; /* Show the container when the 'show' class is added */
+}

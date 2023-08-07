@@ -1,5 +1,5 @@
 function getWeather() {
-    const apiKey = 'b5f7bc717799c13af6c652a35002edd6';
+    const apiKey = '2793290d504358acd13efc9ef9a8ae52';
     const zipCode = document.getElementById('zip').value;
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=${apiKey}&units=metric`)
@@ -35,4 +35,9 @@ function displayWeather(data) {
     `;
 
     weatherInfoDiv.innerHTML = weatherData;
+
+    // Trigger the animation by adding the 'show' class after a short delay
+    setTimeout(() => {
+        weatherInfoDiv.classList.add('show');
+    }, 100);
 }
