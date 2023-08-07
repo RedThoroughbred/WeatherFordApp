@@ -11,6 +11,28 @@ h1 {
     color: #007bff; /* Blue color */
 }
 
+/* Default styles for both mobile and desktop */
+.weather-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ... */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .weather-info-container {
+        width: 90%;
+    }
+}
+
+/* Responsive styles for larger screens (desktop) */
+@media (min-width: 769px) {
+    .weather-info-container {
+        width: 40%;
+    }
+}
+
 button {
     background-color: #4caf50; /* Green color */
     color: white;
